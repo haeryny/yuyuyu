@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "My First Notebook",
-            "content": "msg = &quot;Hello, This is my Jupyter Notebook!&quot; print(msg) .",
+            "content": "msg = &quot;Hello, This is my Jupyter Notebook!&quot; print(msg) . Hello, This is my Jupyter Notebook! .",
             "url": "https://haeryny.github.io/yuyuyu/fastpages/jupyter/2022/08/22/My-First-Notebook.html",
             "relUrl": "/fastpages/jupyter/2022/08/22/My-First-Notebook.html",
             "date": " • Aug 22, 2022"
