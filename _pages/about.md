@@ -4,8 +4,6 @@ title: About Me
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+## My name is Haeryn Yu, and I am a sophmore at Del Norte High school.
 
-
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+## My favorite activities are tennis, drawing, and violin. My favorite food is ramen, but I also like mangoes. 
