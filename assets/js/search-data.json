@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "Intro to Python Notebook",
+            "content": "import getpass, sys def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg questions = 3 correct = 0 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) #This command asks for your name and also introduces you on how to input a message. print(&quot;What is your name?&quot;) msg = input(&quot;My name is: &quot;) print(&quot;Hi &quot; + msg) print(&quot;You will be asked &quot; + str(questions) + &quot; questions.&quot;) question_and_answer = (&quot;Are you ready to take a test?&quot;) #These are the questions and depending on if you answer them correct or not, your score will differ. rsp = question_with_response(&quot;1. What command is used to output a message?&quot;) if rsp == &quot;print&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;2. What is the word in Python that defines a function?&quot;) if rsp == &quot;def&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;3. What is the name of a message output to the user to describe the input requested?&quot;) if rsp == &quot;prompt&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;4. What is your teacher&#39;s name?&quot;) if rsp == &quot;Mr. Yeung&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;5. What language are we learning?&quot;) if rsp == &quot;python&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;6. What period do you have APCSP?&quot;) if rsp == &quot;4&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) #This calculates and tells you your score. print(msg + &quot; you scored &quot; + str(correct) +&quot;/&quot; + str(questions)) .",
+            "url": "https://haeryny.github.io/yuyuyu/fastpages/jupyter/2022/08/24/Intro-to-Python-Notebook.html",
+            "relUrl": "/fastpages/jupyter/2022/08/24/Intro-to-Python-Notebook.html",
+            "date": " • Aug 24, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "Bash",
             "content": "echo &quot;Using conditional statement to create a project directory and project&quot; export project_dir=$HOME/vscode export project=$project_dir/yuyuyu export project_repo=&quot;https://github.com/haeryny/yuyuyu.git&quot; cd ~ if [ ! -d $project_dir ] then echo &quot;Directory $project_dir does not exists... makinng directory $project_dir&quot; mkdir -p $project_dir fi echo &quot;Directory $project_dir exists.&quot; if [ ! -d $project ] then echo &quot;Directory $project does not exists... cloning $project_repo&quot; cd $project_dir git clone $project_repo cd ~ fi echo &quot;Directory $project exists.&quot; . echo &quot;Navigate to project, then navigate to area wwhere files were cloned&quot; cd $project pwd echo &quot;&quot; echo &quot;list top level or root of files with project pulled from github&quot; ls echo &quot;&quot; echo &quot;list again with hidden files pulled from github&quot; ls -a echo &quot;&quot; echo &quot;list all files in long format&quot; ls -al . echo &quot;Look for posts&quot; export posts=$project/_posts cd $posts pwd ls -l . echo &quot;Look for notebooks&quot; export notebooks=$project/_notebooks cd $notebooks pwd ls -l . echo &quot;Look for images in notebooks, print working directory, list files&quot; cd $notebooks/images pwd ls -l . echo &quot;Hello&quot; .",
             "url": "https://haeryny.github.io/yuyuyu/fastpages/jupyter/2022/08/23/Bash.html",
@@ -12,7 +23,7 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "My First Post",
             "content": "My First Post . About Me . My name is Haeryn Yu . Hi! I am a sophmore at Del Norte High School, and I am so excited to take AP Computer Science P. .",
             "url": "https://haeryny.github.io/yuyuyu/markdown/2022/08/22/My-First-Post.html",
@@ -23,7 +34,7 @@
     
   
     
-        ,"post2": {
+        ,"post3": {
             "title": "My First Notebook",
             "content": "msg = &quot;Hello, This is my Jupyter Notebook!&quot; print(msg) . Hello, This is my Jupyter Notebook! .",
             "url": "https://haeryny.github.io/yuyuyu/fastpages/jupyter/2022/08/22/My-First-Notebook.html",
