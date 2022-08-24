@@ -62,14 +62,30 @@
   
 
   
+      ,"page3": {
+          "title": "Notes",
+          "content": "These are my notes for AP Computer Science Principles. . Week 1 . &lt;li&gt;I learned about Python and a few of the commands that we use. They are print(), prompt, def, and how variables work.&lt;/li&gt; .",
+          "url": "https://haeryny.github.io/yuyuyu/notes/",
+          "relUrl": "/notes/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page4": {
+          "title": "Vocabulary",
+          "content": "This is my vocabulary that I will put in while taking AP Computer Science Principles. .",
+          "url": "https://haeryny.github.io/yuyuyu/vocab/",
+          "relUrl": "/vocab/",
+          "date": ""
+      }
+      
   
 
   
 
   
-  
-
-  
 
   
   
@@ -81,7 +97,13 @@
   
 
   
-      ,"page10": {
+  
+
+  
+  
+
+  
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://haeryny.github.io/yuyuyu/robots.txt",
