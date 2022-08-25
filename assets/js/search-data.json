@@ -24,10 +24,10 @@
   
     
         ,"post2": {
-            "title": "Bash",
-            "content": "echo &quot;Using conditional statement to create a project directory and project&quot; export project_dir=$HOME/vscode export project=$project_dir/yuyuyu export project_repo=&quot;https://github.com/haeryny/yuyuyu.git&quot; cd ~ if [ ! -d $project_dir ] then echo &quot;Directory $project_dir does not exists... makinng directory $project_dir&quot; mkdir -p $project_dir fi echo &quot;Directory $project_dir exists.&quot; if [ ! -d $project ] then echo &quot;Directory $project does not exists... cloning $project_repo&quot; cd $project_dir git clone $project_repo cd ~ fi echo &quot;Directory $project exists.&quot; . echo &quot;Navigate to project, then navigate to area wwhere files were cloned&quot; cd $project pwd echo &quot;&quot; echo &quot;list top level or root of files with project pulled from github&quot; ls echo &quot;&quot; echo &quot;list again with hidden files pulled from github&quot; ls -a echo &quot;&quot; echo &quot;list all files in long format&quot; ls -al . echo &quot;Look for posts&quot; export posts=$project/_posts cd $posts pwd ls -l . echo &quot;Look for notebooks&quot; export notebooks=$project/_notebooks cd $notebooks pwd ls -l . echo &quot;Look for images in notebooks, print working directory, list files&quot; cd $notebooks/images pwd ls -l . echo &quot;Hello&quot; .",
-            "url": "https://haeryny.github.io/yuyuyu/fastpages/jupyter/2022/08/23/Bash.html",
-            "relUrl": "/fastpages/jupyter/2022/08/23/Bash.html",
+            "title": "My School Schedule and Info",
+            "content": "My School Schedule and Info . Schedule . 1st Period: Studio Art . I am taking this class in preparation for AP Studio Art, and it is very fun because there is a lot of freedom in this class as well as I enjoy drawing and painting. . 2nd Period: AP Chemistry . I have Mr. Ozuna for AP Chemistry and I really enjoy the class and like the way he teaches with little hints to help us remember the material. . 3rd Period: AP Calculus . Mrs. Buehler is my teacher for AP Calculus and she reminds me of a teacher from middle school, and in addition, I really enjoy math so this is one of my favorite classes. . 4th Period: AP Computer Science P . My dad is also a computer engineer so he is the one who motivated, tutored, and convinced me to sign up for this class. Honestly, I am very greatful that she showed me this class, because I really enjoy it. . 5th Period: Off Roll . I am taking Off Roll because I am in the tennis team and matches start during 5th period. .",
+            "url": "https://haeryny.github.io/yuyuyu/markdown/2022/08/23/My-School-Schedule.html",
+            "relUrl": "/markdown/2022/08/23/My-School-Schedule.html",
             "date": " • Aug 23, 2022"
         }
         
@@ -35,21 +35,21 @@
   
     
         ,"post3": {
-            "title": "My First Post",
-            "content": "My First Post . About Me . My name is Haeryn Yu . Hi! I am a sophmore at Del Norte High School, and I am so excited to take AP Computer Science P. .",
-            "url": "https://haeryny.github.io/yuyuyu/markdown/2022/08/22/My-First-Post.html",
-            "relUrl": "/markdown/2022/08/22/My-First-Post.html",
-            "date": " • Aug 22, 2022"
+            "title": "Intro to Python Notebook",
+            "content": "import getpass, sys def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg questions = 3 correct = 0 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) #This command asks for your name and also introduces you on how to input a message. print(&quot;What is your name?&quot;) msg = input(&quot;My name is: &quot;) print(&quot;Hi &quot; + msg) print(&quot;You will be asked &quot; + str(questions) + &quot; questions.&quot;) question_and_answer = (&quot;Are you ready to take a test?&quot;) #These are the questions and depending on if you answer them correct or not, your score will differ. rsp = question_with_response(&quot;1. What command is used to output a message?&quot;) if rsp == &quot;print&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;2. What is the word in Python that defines a function?&quot;) if rsp == &quot;def&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;3. What is the name of a message output to the user to describe the input requested?&quot;) if rsp == &quot;prompt&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;4. What is your teacher&#39;s name?&quot;) if rsp == &quot;Mr. Yeung&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;5. What language are we learning?&quot;) if rsp == &quot;python&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;6. What period do you have APCSP?&quot;) if rsp == &quot;4&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) #This calculates and tells you your score. print(msg + &quot; you scored &quot; + str(correct) +&quot;/&quot; + str(questions)) .",
+            "url": "https://haeryny.github.io/yuyuyu/fastpages/jupyter/2022/08/23/Intro-To-Python-Notebook.html",
+            "relUrl": "/fastpages/jupyter/2022/08/23/Intro-To-Python-Notebook.html",
+            "date": " • Aug 23, 2022"
         }
         
     
   
     
         ,"post4": {
-            "title": "My First Notebook",
-            "content": "msg = &quot;Hello, This is my Jupyter Notebook!&quot; print(msg) . Hello, This is my Jupyter Notebook! .",
-            "url": "https://haeryny.github.io/yuyuyu/fastpages/jupyter/2022/08/22/My-First-Notebook.html",
-            "relUrl": "/fastpages/jupyter/2022/08/22/My-First-Notebook.html",
+            "title": "My First Post",
+            "content": "My First Post . About Me . My name is Haeryn Yu . Hi! I am a sophmore at Del Norte High School, and I am so excited to take AP Computer Science P. .",
+            "url": "https://haeryny.github.io/yuyuyu/markdown/2022/08/22/My-First-Post.html",
+            "relUrl": "/markdown/2022/08/22/My-First-Post.html",
             "date": " • Aug 22, 2022"
         }
         
@@ -62,7 +62,7 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": "My name is Haeryn Yu, and I am a sophmore at Del Norte High school. . My favorite activities are tennis, drawing, and violin. My favorite food is ramen, but I also like mangoes. .",
+          "content": "This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
           "url": "https://haeryny.github.io/yuyuyu/about/",
           "relUrl": "/about/",
           "date": ""
@@ -75,7 +75,7 @@
   
       ,"page3": {
           "title": "Notes",
-          "content": "These are my notes for AP Computer Science Principles. . Week 1 . &lt;li&gt;I learned about Python and a few of the commands that we use. They are print(), prompt, def, and how variables work.&lt;/li&gt; .",
+          "content": "«««&lt; HEAD ###This These are my notes for AP Computer Science Principles. . Week 1 . &lt;li&gt;I learned about Python and a few of the commands that we use. They are print(), prompt, def, and how variables work.&lt;/li&gt; ======= ### These are my notes for AP Computer Science Principles. . Week 1 . &lt;li&gt;I learned about Python and a few of the commands that we use. They are print(), prompt, def, and how variables work.&lt;/li&gt; . 9788545c6d8b28424bfdfdf4cc295f1d39ea40c0 .",
           "url": "https://haeryny.github.io/yuyuyu/notes/",
           "relUrl": "/notes/",
           "date": ""
@@ -86,7 +86,7 @@
   
       ,"page4": {
           "title": "Vocabulary",
-          "content": "###This is my vocabulary that I will put in while taking AP Computer Science Principles. .",
+          "content": "«««&lt; HEAD ###This is my vocabulary that I will put in while taking AP Computer Science Principles. ======= ###This is my vocabulary that I will put in while taking AP Computer Science Principles. . 9788545c6d8b28424bfdfdf4cc295f1d39ea40c0 .",
           "url": "https://haeryny.github.io/yuyuyu/vocab/",
           "relUrl": "/vocab/",
           "date": ""
