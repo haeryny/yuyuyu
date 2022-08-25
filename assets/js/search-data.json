@@ -13,17 +13,6 @@
   
     
         ,"post1": {
-            "title": "Intro to Python Notebook",
-            "content": "import getpass, sys def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg questions = 3 correct = 0 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) #This command asks for your name and also introduces you on how to input a message. print(&quot;What is your name?&quot;) msg = input(&quot;My name is: &quot;) print(&quot;Hi &quot; + msg) print(&quot;You will be asked &quot; + str(questions) + &quot; questions.&quot;) question_and_answer = (&quot;Are you ready to take a test?&quot;) #These are the questions and depending on if you answer them correct or not, your score will differ. rsp = question_with_response(&quot;1. What command is used to output a message?&quot;) if rsp == &quot;print&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;2. What is the word in Python that defines a function?&quot;) if rsp == &quot;def&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;3. What is the name of a message output to the user to describe the input requested?&quot;) if rsp == &quot;prompt&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;4. What is your teacher&#39;s name?&quot;) if rsp == &quot;Mr. Yeung&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;5. What language are we learning?&quot;) if rsp == &quot;python&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;6. What period do you have APCSP?&quot;) if rsp == &quot;4&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) #This calculates and tells you your score. print(msg + &quot; you scored &quot; + str(correct) +&quot;/&quot; + str(questions)) .",
-            "url": "https://haeryny.github.io/yuyuyu/fastpages/jupyter/2022/08/24/Intro-to-Python-Notebook.html",
-            "relUrl": "/fastpages/jupyter/2022/08/24/Intro-to-Python-Notebook.html",
-            "date": " • Aug 24, 2022"
-        }
-        
-    
-  
-    
-        ,"post2": {
             "title": "My School Schedule and Info",
             "content": "My School Schedule and Info . Schedule . 1st Period: Studio Art . I am taking this class in preparation for AP Studio Art, and it is very fun because there is a lot of freedom in this class as well as I enjoy drawing and painting. . 2nd Period: AP Chemistry . I have Mr. Ozuna for AP Chemistry and I really enjoy the class and like the way he teaches with little hints to help us remember the material. . 3rd Period: AP Calculus . Mrs. Buehler is my teacher for AP Calculus and she reminds me of a teacher from middle school, and in addition, I really enjoy math so this is one of my favorite classes. . 4th Period: AP Computer Science P . My dad is also a computer engineer so he is the one who motivated, tutored, and convinced me to sign up for this class. Honestly, I am very greatful that she showed me this class, because I really enjoy it. . 5th Period: Off Roll . I am taking Off Roll because I am in the tennis team and matches start during 5th period. .",
             "url": "https://haeryny.github.io/yuyuyu/markdown/2022/08/23/My-School-Schedule.html",
@@ -34,7 +23,7 @@
     
   
     
-        ,"post3": {
+        ,"post2": {
             "title": "Intro to Python Notebook",
             "content": "import getpass, sys def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg questions = 3 correct = 0 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) #This command asks for your name and also introduces you on how to input a message. print(&quot;What is your name?&quot;) msg = input(&quot;My name is: &quot;) print(&quot;Hi &quot; + msg) print(&quot;You will be asked &quot; + str(questions) + &quot; questions.&quot;) question_and_answer = (&quot;Are you ready to take a test?&quot;) #These are the questions and depending on if you answer them correct or not, your score will differ. rsp = question_with_response(&quot;1. What command is used to output a message?&quot;) if rsp == &quot;print&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;2. What is the word in Python that defines a function?&quot;) if rsp == &quot;def&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;3. What is the name of a message output to the user to describe the input requested?&quot;) if rsp == &quot;prompt&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;4. What is your teacher&#39;s name?&quot;) if rsp == &quot;Mr. Yeung&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;5. What language are we learning?&quot;) if rsp == &quot;python&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;6. What period do you have APCSP?&quot;) if rsp == &quot;4&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) #This calculates and tells you your score. print(msg + &quot; you scored &quot; + str(correct) +&quot;/&quot; + str(questions)) .",
             "url": "https://haeryny.github.io/yuyuyu/fastpages/jupyter/2022/08/23/Intro-To-Python-Notebook.html",
@@ -45,7 +34,7 @@
     
   
     
-        ,"post4": {
+        ,"post3": {
             "title": "My First Post",
             "content": "My First Post . About Me . My name is Haeryn Yu . Hi! I am a sophmore at Del Norte High School, and I am so excited to take AP Computer Science P. .",
             "url": "https://haeryny.github.io/yuyuyu/markdown/2022/08/22/My-First-Post.html",
