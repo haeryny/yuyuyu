@@ -5,6 +5,9 @@ description: The rundown of my school life
 categories: [markdown]
 title: My School Schedule and Info
 ---
+
+![This is an image](https://s3-us-west-1.amazonaws.com/blastathletics/school_profile_pictures/31942.jpg)
+
 # My School Schedule and Info
 
 ## Schedule
