@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Python Vocabulary",
-            "content": "Vocabulary List . ***print***: used to output a message on the screen. For example, print(“Hello!”) output: Hello! You only use quotations for string, which are words. | ***def***: used to identify a function | ***input***: used to take an input from the user. Input taken from the user will be converted into a string ex: input(“Enter value: “) Enter value: 1 ‘1’ | ***variable****: used to input or is considered a space for a word. For example, msg = &quot;hi&quot; and then I did print(msg) it will output &quot;hi&quot; |",
+            "content": "Vocabulary List . print: used to output a message on the screen. For example, print(“Hello!”) output: Hello! You only use quotations for string, which are words. | def: used to identify a function | input: used to take an input from the user. Input taken from the user will be converted into a string ex: input(“Enter value: “) Enter value: 1 ‘1’ | variable: used to input or is considered a space for a word. For example, msg = &quot;hi&quot; and then I did print(msg) it will output &quot;hi&quot; |",
             "url": "https://haeryny.github.io/yuyuyu/markdown/2022/08/26/Python-Vocabulary.html",
             "relUrl": "/markdown/2022/08/26/Python-Vocabulary.html",
             "date": " • Aug 26, 2022"
