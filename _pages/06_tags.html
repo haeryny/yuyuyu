@@ -8,6 +8,48 @@ search_exclude: true
 {% if site.categories.size > 0 %}
 <h2>Contents</h2>
 
+<table>
+  <tr>
+   <th>Week</th>
+   <th>Notes</th>
+   <th>Markdown</th>
+  </tr>
+
+  <tr>
+      <td>2</td>
+      <td><a href="https://haeryny.github.io/yuyuyu/markdown/week2/2022/09/01/Remote-Theme-Blog.html">Remote Theme Blog</a></td>
+      <td><a href="https://haeryny.github.io/yuyuyu/fastpages/jupyter/notes/week2/2022/08/30/Python-List-Notes.html">Python Lists and Dictionaries</a></td>
+  </tr>
+
+  <tr>
+      <td>1</td>
+      <td><a href="{{site.baseurl}}/week/1">Introduction to Python</a></td>
+      <td>
+          <a href="{{site.baseurl}}/collegeboard/python">Hello to Python</a>,
+          <a href="{{site.baseurl}}/collegeboard/anthony-and-sahil">Reflections on Computer Science</a>
+      </td>
+      <td>
+          <a href="{{site.baseurl}}/techtalk/bash">Bash and Checks</a>,
+          <a href="{{site.baseurl}}/techtalk/fastpages">Fastpages, Jupyter Notebooks, Markdown</a>,
+          <a href="{{site.baseurl}}/techtalk/focus">Focus and Habits</a>     
+      </td>
+      <td><a href="https://poway.instructure.com/courses/127268/assignments/2296689">Intro Python, Jupyter, Fastpages</a></td>
+  </tr>
+  
+  <tr>
+      <td>0</td>
+      <td><a href="{{site.baseurl}}/week/0">Tool Setup</a></td>
+      <td>
+          <a href="{{site.baseurl}}/collegeboard/history">Scoring History</a>,
+          <a href="{{site.baseurl}}/collegeboard/pseudo_code">Pseudo Code</a>
+      </td>
+      <td><a href="{{site.baseurl}}/techtalk/tools">Tools and Equipment</a></td>
+      <td><a href="https://poway.instructure.com/courses/127268/assignments/2206627">Tools Setup</a></td>
+  </tr>
+  
+</table>
+
+
   {% assign categories = "" | split:"" %}
   {% for c in site.categories %}
     {% assign categories = categories | push: c[0] %}
