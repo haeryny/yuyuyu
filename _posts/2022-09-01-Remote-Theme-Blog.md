@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: I changed my remote theme to minimal
-categories: [markdown]
+categories: [markdown, week2]
 title: Remote Theme Blog
 ---
 
