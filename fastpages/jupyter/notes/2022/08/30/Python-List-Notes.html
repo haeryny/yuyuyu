@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Begin Jekyll SEO tag v2.8.0 -->
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Python List Notes | Haeryn Yu</title>
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Python List Notes" />
@@ -25,41 +23,73 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Haeryn Yu"},"dateModified":"2022-08-30T00:00:00-05:00","datePublished":"2022-08-30T00:00:00-05:00","description":"Notes on lists, iterations, and loops.","headline":"Python List Notes","image":"https://haeryny.github.io/yuyuyu/images/diagram.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://haeryny.github.io/yuyuyu/fastpages/jupyter/notes/2022/08/30/Python-List-Notes.html"},"url":"https://haeryny.github.io/yuyuyu/fastpages/jupyter/notes/2022/08/30/Python-List-Notes.html"}</script>
 <!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/yuyuyu/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://haeryny.github.io/yuyuyu/feed.xml" title="Haeryn Yu" /><link rel="shortcut icon" type="image/x-icon" href="/yuyuyu/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css" integrity="sha512-h7nl+xz8wgDlNM4NqKEM4F1NkIRS17M9+uJwIGwuo8vGqIl4BhuCKdxjWEINm+xyrUjNCnK5dCrhM0sj+wTIXw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js" integrity="sha512-/CMIhXiDA3m2c9kzRyd97MTb3MC6OVnx4TElQ7fkkoRghwDf6gi41gaT1PwF270W6+J60uTmwgeRpNpJdRV6sg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js" integrity="sha512-Do7uJAaHZm5OLrIv/yN4w0iG1dbu01kzdMNnFfu/mAqgUk6Nniv2JYHcwH+cNwjqgLcqcuBBk+JRvprLVI8azg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A==" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
 
-    <link rel="stylesheet" href="/yuyuyu/assets/css/style.css?v=">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
-<!-- Setup Google Analytics -->
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
 
+  <div class="wrapper"><a class="site-title" rel="author" href="/yuyuyu/">Haeryn Yu</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
 
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/yuyuyu/favicon.ico" -->
-
-<!-- end custom head snippets -->
-
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="https://haeryny.github.io/yuyuyu/">Haeryn Yu</a></h1>
-
-        
-
-        <p>Haeryn Yu's Fastpage</p>
-
-        
-
-        
-
-        
-      </header>
-      <section>
-
-      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="trigger"><a class="page-link" href="/yuyuyu/about/">About Me</a><a class="page-link" href="/yuyuyu/search/">Search</a><a class="page-link" href="/yuyuyu/notes/">Notes</a><a class="page-link" href="/yuyuyu/vocab/">Vocabulary</a><a class="page-link" href="/yuyuyu/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">Python List Notes</h1><p class="page-description">Notes on lists, iterations, and loops.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-30T00:00:00-05:00" itemprop="datePublished">
@@ -70,7 +100,7 @@
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -122,6 +152,7 @@
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h3"><a href="#List-and-Dictionary-purpose">List and Dictionary purpose </a></li>
+<li class="toc-entry toc-h2"><a href="#Using-this-information,-I-will-make-a-quiz-that-stores-in-a-List-of-Dictionaries-and-asking-questions-about-the-tests.">Using this information, I will make a quiz that stores in a List of Dictionaries and asking questions about the tests. </a></li>
 </ul><!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
@@ -137,19 +168,21 @@
 <h3 id="List-and-Dictionary-purpose">
 <a class="anchor" href="#List-and-Dictionary-purpose" aria-hidden="true"><span class="octicon octicon-link"></span></a>List and Dictionary purpose<a class="anchor-link" href="#List-and-Dictionary-purpose"> </a>
 </h3>
-<p>Our society is being build on information.  List and Dictionaries are used to collect information.  Mostly, when information is collected it is formed into patterns.  As that pattern is established you will collect many instances of that pattern.</p>
 <ul>
 <li>List is used to collect many</li>
 <li>Dictionary is used to define data patterns.</li>
-<li>
-<p>Iteration is often used to process through lists.</p>
-</li>
-<li>
-<p>As we learned above, List is a data type: class 'list'</p>
-</li>
+<li>Iteration is often used to process through lists.</li>
 <li>A 'list' data type has the method '.append(expression)' that allows you to add to the list</li>
-<li>In the example below,  the expression appended to the 'list' is the data type: class 'dict'</li>
+<li>The function '.append(expression)' of a 'list' data type lets you to add to the list. </li>
 </ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>So I will use the InfoDb command to sort the important dates for class.</p>
 
 </div>
 </div>
@@ -163,24 +196,44 @@
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">InfoDb</span> <span class="o">=</span> <span class="p">[]</span>
 
-<span class="c1"># Append to List a Dictionary of key/values related to a person and cars</span>
+<span class="c1"># Append to List a Dictionary</span>
 <span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Haeryn"</span><span class="p">,</span>
-    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Yu"</span><span class="p">,</span>
-    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"April 29"</span><span class="p">,</span>
-    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
-    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"haerynjack@gmail.com"</span><span class="p">,</span>
-    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"None"</span><span class="p">]</span>
+    <span class="s2">"ClassName"</span><span class="p">:</span> <span class="s2">"AP Chemistry"</span><span class="p">,</span>
+    <span class="s2">"Period"</span><span class="p">:</span> <span class="s2">"2"</span><span class="p">,</span>
+    <span class="s2">"TypeOfTest"</span><span class="p">:</span> <span class="s2">"FRQ"</span><span class="p">,</span>
+    <span class="s2">"Date"</span><span class="p">:</span> <span class="s2">"9/7/22"</span><span class="p">,</span>
+    <span class="s2">"StudyMaterial"</span><span class="p">:</span> <span class="s2">"AP Style Test Problems"</span><span class="p">,</span>
+    <span class="s2">"TeacherEmail"</span><span class="p">:</span> <span class="s2">"kozuna@powayusd.com"</span><span class="p">,</span>
 <span class="p">})</span>
 
 <span class="c1"># Append to List a 2nd Dictionary of key/values</span>
 <span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Sung Hee"</span><span class="p">,</span>
-    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Kang"</span><span class="p">,</span>
-    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"January 11"</span><span class="p">,</span>
-    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
-    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"bombomsukise@gmail.com"</span><span class="p">,</span>
-    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"2018 Lexus SUV"</span><span class="p">]</span>
+    <span class="s2">"ClassName"</span><span class="p">:</span> <span class="s2">"AP Calculus"</span><span class="p">,</span>
+    <span class="s2">"Period"</span><span class="p">:</span> <span class="s2">"3"</span><span class="p">,</span>
+    <span class="s2">"TypeOfTest"</span><span class="p">:</span> <span class="s2">"MC and FRQ"</span><span class="p">,</span>
+    <span class="s2">"Date"</span><span class="p">:</span> <span class="s2">"9/9/22"</span><span class="p">,</span>
+    <span class="s2">"StudyMaterial"</span><span class="p">:</span> <span class="s2">"Review Homework"</span><span class="p">,</span>
+    <span class="s2">"TeacherEmail"</span><span class="p">:</span> <span class="s2">"jbuehler@powayusd.com"</span><span class="p">,</span>
+<span class="p">})</span>
+
+<span class="c1"># Append to List a 3rd Dictionary of key/values</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"ClassName"</span><span class="p">:</span> <span class="s2">"AP Studio Art"</span><span class="p">,</span>
+    <span class="s2">"Period"</span><span class="p">:</span> <span class="s2">"1"</span><span class="p">,</span>
+    <span class="s2">"TypeOfTest"</span><span class="p">:</span> <span class="s2">"Submission of Art"</span><span class="p">,</span>
+    <span class="s2">"Date"</span><span class="p">:</span> <span class="s2">"9/1/22"</span><span class="p">,</span>
+    <span class="s2">"StudyMaterial"</span><span class="p">:</span> <span class="s2">"Finish First Art Piece"</span><span class="p">,</span>
+    <span class="s2">"TeacherEmail"</span><span class="p">:</span> <span class="s2">"pcoleman@powayusd.com"</span><span class="p">,</span>
+<span class="p">})</span>
+
+<span class="c1"># Append to List a 4th Dictionary of key/values</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"ClassName"</span><span class="p">:</span> <span class="s2">"AP CompSci"</span><span class="p">,</span>
+    <span class="s2">"Period"</span><span class="p">:</span> <span class="s2">"4"</span><span class="p">,</span>
+    <span class="s2">"TypeOfTest"</span><span class="p">:</span> <span class="s2">"Submission of Hacks"</span><span class="p">,</span>
+    <span class="s2">"Date"</span><span class="p">:</span> <span class="s2">"9/5/22"</span><span class="p">,</span>
+    <span class="s2">"StudyMaterial"</span><span class="p">:</span> <span class="s2">"Finish Hacks at bottom page"</span><span class="p">,</span>
+    <span class="s2">"TeacherEmail"</span><span class="p">:</span> <span class="s2">"syeung@powayusd.com"</span><span class="p">,</span>
 <span class="p">})</span>
 
 <span class="c1"># Print the data structure</span>
@@ -197,7 +250,7 @@
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[{'FirstName': 'Haeryn', 'LastName': 'Yu', 'DOB': 'April 29', 'Residence': 'San Diego', 'Email': 'haerynjack@gmail.com', 'Owns_Cars': ['None']}, {'FirstName': 'Sung Hee', 'LastName': 'Kang', 'DOB': 'January 11', 'Residence': 'San Diego', 'Email': 'bombomsukise@gmail.com', 'Owns_Cars': ['2018 Lexus SUV']}]
+<pre>[{'ClassName': 'AP Chemistry', 'Period': '2', 'TypeOfTest': 'FRQ', 'Date': '9/7/22', 'StudyMaterial': 'AP Style Test Problems', 'TeacherEmail': 'kozuna@powayusd.com'}, {'ClassName': 'AP Calculus', 'Period': '3', 'TypeOfTest': 'MC and FRQ', 'Date': '9/9/22', 'StudyMaterial': 'Review Homework', 'TeacherEmail': 'jbuehler@powayusd.com'}, {'ClassName': 'AP Studio Art', 'Period': '1', 'TypeOfTest': 'Submission of Art', 'Date': '9/1/22', 'StudyMaterial': 'Finish First Art Piece', 'TeacherEmail': 'pcoleman@powayusd.com'}, {'ClassName': 'AP CompSci', 'Period': '4', 'TypeOfTest': 'Submission of Hacks', 'Date': '9/5/22', 'StudyMaterial': 'Finish Hacks at bottom page', 'TeacherEmail': 'syeung@powayusd.com'}]
 </pre>
 </div>
 </div>
@@ -224,11 +277,11 @@
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">print_data</span><span class="p">(</span><span class="n">d_rec</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"FirstName"</span><span class="p">],</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"LastName"</span><span class="p">])</span>  <span class="c1"># using comma puts space between values</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Residence:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Residence"</span><span class="p">])</span> <span class="c1"># \t is a tab indent</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Birth Day:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"DOB"</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Cars: "</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>  <span class="c1"># end="" make sure no return occurs</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"Owns_Cars"</span><span class="p">]))</span>  <span class="c1"># join allows printing a string list with separator</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"ClassName"</span><span class="p">],</span> <span class="s2">"Period:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Period"</span><span class="p">])</span>  <span class="c1"># using comma puts space between values</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Type Of Test:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"TypeOfTest"</span><span class="p">])</span> <span class="c1"># \t is a tab indent</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Date:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Date"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Study Material:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"StudyMaterial"</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Teacher Email:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"TeacherEmail"</span><span class="p">])</span>
     <span class="nb">print</span><span class="p">()</span>
 
 
@@ -253,74 +306,29 @@
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>For loop output
 
-Haeryn Yu
-	 Residence: San Diego
-	 Birth Day: April 29
-	 Cars: None
+AP Chemistry Period: 2
+	 Type Of Test: FRQ
+	 Date: 9/7/22
+	 Study Material: AP Style Test Problems
+	 Teacher Email: kozuna@powayusd.com
 
-Sung Hee Kang
-	 Residence: San Diego
-	 Birth Day: January 11
-	 Cars: 2018 Lexus SUV
+AP Calculus Period: 3
+	 Type Of Test: MC and FRQ
+	 Date: 9/9/22
+	 Study Material: Review Homework
+	 Teacher Email: jbuehler@powayusd.com
 
-</pre>
-</div>
-</div>
+AP Studio Art Period: 1
+	 Type Of Test: Submission of Art
+	 Date: 9/1/22
+	 Study Material: Finish First Art Piece
+	 Teacher Email: pcoleman@powayusd.com
 
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>This is the while loop. This loop is easier to understand and can be used in many different types of situations.</p>
-
-</div>
-</div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">while_loop</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"While loop output</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">):</span>
-        <span class="n">record</span> <span class="o">=</span> <span class="n">InfoDb</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
-        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="k">return</span>
-
-<span class="n">while_loop</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>While loop output
-
-Haeryn Yu
-	 Residence: San Diego
-	 Birth Day: April 29
-	 Cars: None
-
-Sung Hee Kang
-	 Residence: San Diego
-	 Birth Day: January 11
-	 Cars: 2018 Lexus SUV
+AP CompSci Period: 4
+	 Type Of Test: Submission of Hacks
+	 Date: 9/5/22
+	 Study Material: Finish Hacks at bottom page
+	 Teacher Email: syeung@powayusd.com
 
 </pre>
 </div>
@@ -335,8 +343,9 @@ Sung Hee Kang
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This is the recursive loop. Like how the name says, this loop loops itself until it can not anymore.</p>
-
+<h2 id="Using-this-information,-I-will-make-a-quiz-that-stores-in-a-List-of-Dictionaries-and-asking-questions-about-the-tests.">
+<a class="anchor" href="#Using-this-information,-I-will-make-a-quiz-that-stores-in-a-List-of-Dictionaries-and-asking-questions-about-the-tests." aria-hidden="true"><span class="octicon octicon-link"></span></a>Using this information, I will make a quiz that stores in a List of Dictionaries and asking questions about the tests.<a class="anchor-link" href="#Using-this-information,-I-will-make-a-quiz-that-stores-in-a-List-of-Dictionaries-and-asking-questions-about-the-tests."> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -347,15 +356,51 @@ Sung Hee Kang
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">recursive_loop</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">InfoDb</span><span class="p">):</span>
-        <span class="n">record</span> <span class="o">=</span> <span class="n">InfoDb</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
-        <span class="n">recursive_loop</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="k">return</span>
-    
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Recursive loop output</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-<span class="n">recursive_loop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">getpass</span><span class="o">,</span> <span class="nn">sys</span>
+
+<span class="k">def</span> <span class="nf">question_with_response</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Question: "</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">msg</span>
+
+<span class="n">questions</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Hello, '</span> <span class="o">+</span> <span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">" running "</span> <span class="o">+</span> <span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"This is the example questions about the dates and classes in my schedule."</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"You will be asked "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" questions."</span><span class="p">)</span>
+<span class="n">question_and_answer</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"Are you ready to take a test?"</span><span class="p">)</span>
+
+<span class="c1"># Define an empty List called InfoDb</span>
+<span class="n">InfoDb</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># Append to List a Dictionary</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"ClassName"</span><span class="p">:</span> <span class="s2">"AP Chemistry"</span><span class="p">,</span>
+    <span class="s2">"Period"</span><span class="p">:</span> <span class="s2">"2"</span><span class="p">,</span>
+    <span class="s2">"TypeOfTest"</span><span class="p">:</span> <span class="s2">"FRQ"</span><span class="p">,</span>
+    <span class="s2">"Date"</span><span class="p">:</span> <span class="s2">"9/7/22"</span><span class="p">,</span>
+    <span class="s2">"StudyMaterial"</span><span class="p">:</span> <span class="s2">"AP Style Test Problems"</span><span class="p">,</span>
+    <span class="s2">"TeacherEmail"</span><span class="p">:</span> <span class="s2">"kozuna@powayusd.com"</span><span class="p">,</span>
+<span class="p">})</span>
+
+<span class="c1">#I am using the for loop</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
+    <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="n">questionsType</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="n">answersType</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
+    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
+
+<span class="n">questionsType</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"1. Class Name?"</span><span class="p">,</span> <span class="s2">"2. Period?"</span><span class="p">,</span> <span class="s2">"3. Type of test?"</span><span class="p">,</span> <span class="s2">"4. Date?"</span><span class="p">,</span> <span class="s2">"5. Study Material"</span><span class="p">,</span> <span class="s2">"6. Teacher Email?"</span><span class="p">]</span>
+<span class="n">answersType</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"AP Chemistry"</span><span class="p">,</span> <span class="s2">"2"</span><span class="p">,</span> <span class="s2">"FRQ"</span><span class="p">,</span> <span class="s2">"9/7/22"</span><span class="p">,</span> <span class="s2">"AP Style Test Problems"</span><span class="p">,</span> <span class="s2">"kozuna@powayusd.com"</span><span class="p">]</span>
+
+
+<span class="c1">#This calculates and tells you your score. </span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">" you scored "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct</span><span class="p">)</span> <span class="o">+</span><span class="s2">"/"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -368,18 +413,17 @@ Sung Hee Kang
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Recursive loop output
-
-Haeryn Yu
-	 Residence: San Diego
-	 Birth Day: April 29
-	 Cars: None
-
-Sung Hee Kang
-	 Residence: San Diego
-	 Birth Day: January 11
-	 Cars: 2018 Lexus SUV
-
+<pre>Hello, haeryny running /bin/python3
+This is the example questions about the dates and classes in my schedule.
+You will be asked 6 questions.
+Question: 1. Class Name?
+Question: 2. Period?
+Question: 3. Type of test?
+Question: 4. Date?
+Question: 5. Study Material
+Question: 6. Teacher Email?
+kozuna@powayusd.com is incorrect!
+ you scored 6/6
 </pre>
 </div>
 </div>
@@ -405,13 +449,33 @@ Sung Hee Kang
 </script><a class="u-url" href="/yuyuyu/fastpages/jupyter/notes/2022/08/30/Python-List-Notes.html" hidden></a>
 </article>
 
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/yuyuyu/"></data>
 
-      </section>
-      <footer>
-        
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/yuyuyu/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/yuyuyu/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Haeryn Yu&#39;s Fastpage</p>
+      </div>
     </div>
-    <script src="/yuyuyu/assets/js/scale.fix.js"></script>
-  </body>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/yuyuyu/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/yuyuyu/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
 </html>
