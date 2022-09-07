@@ -5,12 +5,7 @@ description: Code.org Quiz planning and blogging of things I did
 categories: [markdown, week1]
 title: Code.org Quiz
 ---
-Things that I did:
-<ol>
-  <li>Planning and brainstorming</li>
-  <li>Coding</li>
-  <li>Final Results</li>
-</ol>
+# Things I did
 
 ### Planning and Brainstorming
 
@@ -19,6 +14,8 @@ I brainstormed and planned with my partner, Annika. Together we thought about qu
 ### Coding
 
 For coding, I used the UI Control On Event and made it print out which button the player picked when a button was pressed on. I found the typing easier rather than blocks for coding. The destination of where the button takes you changed for each button, and only one for each page takes you to the next question, while the other three take you to a different page. This is a screenshot of my code. 
+
+![image](https://user-images.githubusercontent.com/111464920/188987449-cfe3ac83-d2e7-4ec9-83da-379f1b54ba69.png)
 
 I made a new page where it shows that you got it wrong and made it so that if you got a question wrong, then you have to click another button to return to the homepage until you got everything correct, then it will show a page where it says you got a 3/3 or 100%.
 
