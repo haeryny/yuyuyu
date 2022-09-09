@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Code.org Quiz planning and blogging of things I did
-categories: [markdown, week1]
+categories: [markdown, week3]
 title: Code.org Quiz
 ---
 # Things I did
