@@ -24,7 +24,68 @@ layout: notebook
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Vocabulary">Vocabulary<a class="anchor-link" href="#Vocabulary"> </a></h2><p>-</p>
+<h2 id="Notes">Notes<a class="anchor-link" href="#Notes"> </a></h2><ul>
+<li>We are not stuck at a certain spot, and the things can be improved. We can control a lot more of our happiness.</li>
+<li>Taking control of our life is very difficult sometimes, and we should not undermine ourselves if we fail</li>
+<li>Do not rely on what single thing to achieve happiness, for example, lottery wins are not as important and only affect a small part of us, compared to what we think</li>
+<li>Happiness is achieved not a single moment, but multiples things that build up to another</li>
+<li>Friendships and being social is a very important part of daily life as well as helping others and being grateful towards them</li>
+<li>Have self-care and care for yourself, exercise and do something good for your own well being</li>
+<li>Be patient and be present in the moment, realize that we are staring at our phones and we should look up and enjoy our lives as they are right now</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Gratitude-List">Gratitude List<a class="anchor-link" href="#Gratitude-List"> </a></h2><p>Things I am very grateful for:</p>
+<ul>
+<li>my family for always being there for me</li>
+<li>food and water that I eat every day</li>
+<li>going to school everyday</li>
+<li>being healthy and able to move and exercise</li>
+<li>my friends and places I go with them</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Gratitude-to-my-Friend">Gratitude to my Friend<a class="anchor-link" href="#Gratitude-to-my-Friend"> </a></h3><p>A message I wrote to them: "Thank you so much for being my friend for such long time and putting up with me everyday. You are such a kind and beautiful person and you mean so much to me."</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Gratitude-to-someone-at-home">Gratitude to someone at home<a class="anchor-link" href="#Gratitude-to-someone-at-home"> </a></h3><p>A message I wrote to my parents: "Thank you for being there everyday for me and taking care of me everyday. I am so grateful for having parents like you and you are so amazing and inspirational and my role models. I hope you live for a very long time so I will be able to help you like you help me everyday. I love you."</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Goals">Goals<a class="anchor-link" href="#Goals"> </a></h2><ul>
+<li>Academic: I want to be productive and hard-working through my whole career, and I hope I study things without getting distracted. I will maintain my health while studying and work hard. </li>
+<li>Personal Life: I want to maintain my mental and physical health and care more about myself than others. I want to do things I enjoy and pursue my interests instead of others. </li>
+<li>Social Life: I want to keep in touch with my family and call my family who lives in Korea every week. I hope I don't drift from my friends and enjoy my time with my family and friends.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Personal-Journey-in-CSP">Personal Journey in CSP<a class="anchor-link" href="#Personal-Journey-in-CSP"> </a></h3><p>I want to learn more about coding in different languages like Python, Java, and maybe C++. I also want to successfully finish my project for this class.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Things-I-did-for-myself">Things I did for myself<a class="anchor-link" href="#Things-I-did-for-myself"> </a></h3><p>On Saturday, my family and I drove to LA to eat out to my family's favorite place. It has been a long time since we have done this and it was a great way to catch up with each other's life and enjoy each other's presence while having a delicious food. I enjoy being with a lot of people and this really helped me distress over school and other things.</p>
 
 </div>
 </div>
