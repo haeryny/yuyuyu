@@ -24,7 +24,7 @@ layout: notebook
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Notes">Notes<a class="anchor-link" href="#Notes"> </a></h2><ul>
+<h2 id="Important-Points">Important Points<a class="anchor-link" href="#Important-Points"> </a></h2><ul>
 <li>We are not stuck at a certain spot, and the things can be improved. We can control a lot more of our happiness.</li>
 <li>Taking control of our life is very difficult sometimes, and we should not undermine ourselves if we fail</li>
 <li>Do not rely on what single thing to achieve happiness, for example, lottery wins are not as important and only affect a small part of us, compared to what we think</li>
