@@ -22,6 +22,15 @@ layout: notebook
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Submenu">Submenu<a class="anchor-link" href="#Submenu"> </a></h2><p>I made a Javascript program to arrange my schedule, which is in a submenu in the navigation bar containing connections to this page.</p>
+<p>{% include navigationbar.html %}</p>
+<h2 id="Coding-for-calendar">Coding for calendar<a class="anchor-link" href="#Coding-for-calendar"> </a></h2><p>I made a calendar using Javascript by using code like "head", "body", etc.</p>
+
+</div>
+</div>
+</div>
 </div>
  
 
