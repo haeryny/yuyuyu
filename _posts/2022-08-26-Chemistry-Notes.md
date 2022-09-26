@@ -1,3 +1,6 @@
+---
+layout: post
+---
 **AP\* Chemistry**
 
 **Chemical Foundations**
