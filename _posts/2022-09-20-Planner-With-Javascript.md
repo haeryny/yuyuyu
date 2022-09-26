@@ -99,15 +99,15 @@ body {font-family: Verdana, sans-serif;}
 </head>
 <body>
 
-<h1>CSS Calendar</h1>
+<h1>Haeryn Calendar</h1>
 
 <div class="month">      
   <ul>
     <li class="prev">&#10094;</li>
     <li class="next">&#10095;</li>
     <li>
-      August<br>
-      <span style="font-size:18px">2021</span>
+      September<br>
+      <span style="font-size:18px">2022</span>
     </li>
   </ul>
 </div>
@@ -123,16 +123,20 @@ body {font-family: Verdana, sans-serif;}
 </ul>
 
 <ul class="days">  
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
   <li>1</li>
   <li>2</li>
   <li>3</li>
   <li>4</li>
   <li>5</li>
   <li>6</li>
+  <li><span class="active">10</span></li>
   <li>7</li>
   <li>8</li>
   <li>9</li>
-  <li><span class="active">10</span></li>
+  <li>10</li>
   <li>11</li>
   <li>12</li>
   <li>13</li>
@@ -153,7 +157,6 @@ body {font-family: Verdana, sans-serif;}
   <li>28</li>
   <li>29</li>
   <li>30</li>
-  <li>31</li>
 </ul>
 
 </body>
