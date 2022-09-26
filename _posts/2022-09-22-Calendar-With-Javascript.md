@@ -10,7 +10,7 @@ title: Calendar with Javascript
 {% include navigationbar.html %}
 
 ## Program Purpose
-- A program that will store your events in a table.
+- A program that will show you a calendar of the month.
 
 <head>
 <style>
