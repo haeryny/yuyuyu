@@ -5,9 +5,6 @@ title: Tags
 search_exclude: true
 ---
 
-{% if site.categories.size > 0 %}
-<h2>Contents</h2>
-
 <table>
   <tr>
    <th>Week</th>
@@ -61,9 +58,8 @@ search_exclude: true
     <td><a href="https://haeryny.github.io/yuyuyu/markdown/week1/2022/08/26/Python-Vocabulary.html">Python Vocabulary</a></td>
   </tr>
 
-
-
-
+{% if site.categories.size > 0 %}
+<h2>Contents</h2>
 
   {% assign categories = "" | split:"" %}
   {% for c in site.categories %}
