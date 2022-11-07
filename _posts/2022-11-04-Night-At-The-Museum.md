@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: My personal experience at Night at the Museum!
-categories: [markdown]
+categories: [markdown, week Final]
 title: Night at the Museum
 ---
 

@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: My blog of the Trimester 1 Final
-categories: [markdown]
+categories: [markdown, week Final]
 title: Trimester 1 APCSP Final
 ---
 
