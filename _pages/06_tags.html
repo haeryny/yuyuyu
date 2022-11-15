@@ -5,9 +5,6 @@ title: Tags
 search_exclude: true
 ---
 
-{% if site.categories.size > 0 %}
-<h2>Contents</h2>
-
 <table>
   <tr>
    <th>Week</th>
@@ -15,6 +12,20 @@ search_exclude: true
    <th>Markdown</th>
   </tr>
 
+  <tr>
+    <td>7</td>
+    <td> 
+      <a href="https://haeryny.github.io/yuyuyu/fastpages/jupyter/notes/week7/2022/10/05/1.4-Notes.html">1.4 Notes</a>
+      <a href="http://localhost:4000/yuyuyu/java/week7/2022/10/07/Git-Sociology.html">Git Sociology</a>
+    <td><a href="https://haeryny.github.io/yuyuyu/fastpages/jupyter/week7/2022/10/06/API.html">API</a></td>
+  </tr>
+
+  <tr>
+    <td>6</td>
+    <td><a href="https://haeryny.github.io/yuyuyu/fastpages/jupyter/notes/week6/2022/09/26/1.3-Notes.html">1.3 Notes</a></td>
+    <td> none </a></td>
+  </tr>
+  
   <tr>
     <td>5</td>
     <td>
@@ -44,12 +55,13 @@ search_exclude: true
   </tr>
 
   <tr>
-    <td>2</td>
+    <td>1</td>
     <td><a href="https://haeryny.github.io/yuyuyu/fastpages/jupyter/notes/week1/2022/08/23/Intro-To-Python-Notebook.html">Intro to Python Notes</a></td>
     <td><a href="https://haeryny.github.io/yuyuyu/markdown/week1/2022/08/26/Python-Vocabulary.html">Python Vocabulary</a></td>
   </tr>
 
-
+{% if site.categories.size > 0 %}
+<h2>Contents</h2>
 
   {% assign categories = "" | split:"" %}
   {% for c in site.categories %}
