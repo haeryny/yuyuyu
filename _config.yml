@@ -124,3 +124,13 @@ feed:
   
 exclude:
   - settings.ini
+
+# Github and twitter are optional:
+minima:
+  skin: dark
+  #  social_links:
+  #   youtube_channel: UClIKOsDS5dsfzFA3zveDT3Q
+  social_links:
+    - { platform: youtube, user_url: ”
+https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q
+“}
