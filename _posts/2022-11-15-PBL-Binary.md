@@ -159,15 +159,19 @@ type: pbl
         var output = document.getElementById("outputBinary");
         var input = document.getElementById("inputBinary").value;
         output.value = "";
+        // This is where the character gets changed into binary using ASCII
         for (i = 0; i < input.length; i++) {
             var e = input[i].charCodeAt(0);
             var s = "";
             do {
+                // This is where they change it into 0s and 1s
                 var a = e % 2;
                 e = (e - a) / 2;
                 s = a + s;
             } while (e != 0);
+            // This code continues to do it until the while condition is fulfilled
             while (s.length < 8) {
+                // makes it 8 bits and binary
             s = "0" + s;
             }
             output.value += s;
