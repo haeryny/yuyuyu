@@ -155,4 +155,29 @@ type: pbl
         }
         }
     }
+    function convertBinary() {
+        var output = document.getElementById("outputBinary");
+        var input = document.getElementById("inputBinary").value;
+        output.value = "";
+        for (i = 0; i < input.length; i++) {
+            var e = input[i].charCodeAt(0);
+            var s = "";
+            do {
+                var a = e % 2;
+                e = (e - a) / 2;
+                s = a + s;
+            } while (e != 0);
+            while (s.length < 8) {
+            s = "0" + s;
+            }
+            output.value += s;
+        }
+    }   
 </script>
+
+
+<div class="container">
+  <span class="main">Binary Converter</span><br>
+  <textarea autofocus class="inputBinary" id="inputBinary" onKeyUp="convertBinary()"></textarea>
+  <textarea class="outputBinary" id="outputBinary" readonly></textarea>
+</div>
